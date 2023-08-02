@@ -9,7 +9,6 @@ body {
     height: 100%;
     width: 100%;
 
-    background-image: url(https://rudderstack.com/static/banner-gradiant-e6df57582a3365581f38669e71714e81.jpg);
 }
 
 section {
@@ -32,7 +31,10 @@ form {
     background-color: #fff;
     box-shadow: 1px 1px 15px -1px #17176e;
     color: #0e1738;
-
+    
+    width: 50%;
+    min-width: 300px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +48,20 @@ h1 {
     color: #17176e;
 }
 
+div.header {
+    background-color: #b31d15;
+    width: 100%;
+    margin: 13px auto;
+    display: flow;
+    height: 51px;
+    padding: 5px 0 0 0;    
+}
+
+img.header{
+    margin: 0 auto;
+    display: block;
+}
+
 div.email-field {
     width: 100%;
 
@@ -57,6 +73,7 @@ div.email-field {
     border-radius: 5px;
     background-color: #fff;
 }
+
 div.submit-button {
     width: 100%;
     padding: .5rem 0;
