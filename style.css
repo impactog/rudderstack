@@ -11,14 +11,18 @@ body {
 
 }
 
-section {
+.content {
     width: 100%;
+    display: block;    
+}
 
-    margin-top: 3rem;
-
+section {
+    width: 46%;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 300px;
+    margin: 14px;
 }
 
 form {
@@ -32,7 +36,7 @@ form {
     box-shadow: 1px 1px 15px -1px #17176e;
     color: #0e1738;
     
-    width: 50%;
+    width: 100%;
     min-width: 300px;
     
     display: flex;
