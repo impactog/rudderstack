@@ -5,7 +5,6 @@ document.querySelector("#web-visit-form").addEventListener("submit", function(ev
     //  Referencia: https://www.rudderstack.com/docs/event-spec/standard-events/page/
     rudderanalytics.page(rudderanalytics.getUserId(), { url: document.querySelector("#email").value })
 
-    emailForm.value = ""
 } )
 
 
