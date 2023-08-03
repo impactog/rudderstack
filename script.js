@@ -3,8 +3,8 @@ document.querySelector("#web-visit-form").addEventListener("submit", function(ev
     event.preventDefault()
     
     //  Referencia: https://www.rudderstack.com/docs/event-spec/standard-events/page/
-    rudderanalytics.page(rudderanalytics.getUserId(), { url: document.querySelector("#email").value })
-
+    rudderanalytics.page({ url: document.querySelector("#email").value })
+// rudderanalytics.getUserId(), 
 } )
 
 
