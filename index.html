@@ -26,13 +26,14 @@
     </div>
     <h1>RudderStack ADEN Test</h1>
 
+    <h2>Test de interacciones PÚBLICAS</h2>
+
     <div class ="content">
 <!-- CONTENT STARTS -->
 
     <section>
         <form id="web-visit-form" action="submit" class="email-form">
-            <h3>Visita a WEB</h3>
-            
+            <h3>Visita a WEB</h3>            
             <!-- Referencia:       //  Referencia: https://www.rudderstack.com/docs/event-spec/standard-events/page/ -->
             <input type="input" name="url" id="url" placeholder="www.google.com" required>
             <button type="submit">Registrar Visita</button>
@@ -46,11 +47,159 @@
             <button type="submit">Identificar el email</button>
         </form>        
     </section>
+        
+    <section>
+        <form id="intereses-form" action="submit" class="email-form">
+            <h3>Intereses</h3>
+            <input type="checkbox" name="interes[]" id="interes[]" value="Marketing"> Marketing
+            <input type="checkbox" name="interes[]" id="interes[]" value="Finanzas" > Finanzas
+            <input type="checkbox" name="interes[]" id="interes[]" value="Estrategia" > Estrategia
+            <input type="checkbox" name="interes[]" id="interes[]" value="Proyectos" > Proyectos 
+            <input type="checkbox" name="interes[]" id="interes[]" value="Tecnología" > Tecnología
+            <button type="submit">Guardar Intereses</button>
+        </form>        
+    </section>
 
+    <section>
+        <form id="intereses-form" action="submit" class="email-form">
+            <h3>Productos Consultados</h3>
+            <input type="checkbox" name="interes[]" id="interes[]" value="Master en Marketing"> Master en Marketing
+            <input type="checkbox" name="interes[]" id="interes[]" value="Especialización en Finanzas" > Especialización en Finanzas
+            <input type="checkbox" name="interes[]" id="interes[]" value="MBA One Year con Enfasis en Proyectos" > MBA One Year con Enfasis en Proyectos
+            <button type="submit">Guardar Programas</button>
+        </form>        
+    </section>
+
+    <section>
+        <form id="linkedin-form" action="submit" class="email-form">
+            <h3>Perfil de Linkedin</h3>
+            <input type="input" name="url_linkedin" id="url_linkedin" placeholder="https://www.linkedin.com/in/federicomarengo/" required>
+            <button type="submit">Guardar Perfil de Linkedin</button>
+        </form>        
+    </section>
+
+    <section>
+        <form id="foto-form" action="submit" class="email-form">
+            <h3>Foto de Perfil</h3>
+            <input type="input" name="url_foto" id="url_foto" placeholder="https://media.licdn.com/dms/image/C4E03AQGLWqQIgZdaMA/profile-displayphoto-shrink_800_800/0/1636996640200?e=2147483647&v=beta&t=462pfZ7qOmbkJGbjaeDADM-L6dEeb53KK7pjT2AUE9E" required>
+            <button type="submit">Guardar Fotod de Perfil</button>
+        </form>        
+    </section>
+        
+    <section>
+        <form id="evento-form" action="submit" class="email-form">
+            <h3>Asistencia a evento</h3>
+            <input type="input" name="evento" id="evento" placeholder="Summit Compliance Ecuador" required>
+            <input type="input" name="evento_pais" id="evento_pais" placeholder="Panamá" required>
+              <input type="radio" id="Online" name="evento_tipo" value="Online">
+              <label for="Online">Online</label><br>
+              <input type="radio" id="Presencial" name="evento_tipo" value="Presencial">
+              <label for="Presencial">Presencial</label><br>          
+            <button type="submit">Guardar Fotod de Perfil</button>
+        </form>
+    </section>
         
 
 <!-- END CONTENT -->
     </div>
+
+    <h2>Test de interacciones PRIVADAS</h2>
+
+    <div class ="content">
+<!-- CONTENT STARTS -->
+
+    <section>
+        <form id="llamada-form" action="submit" class="email-form">
+            <h3>Llamada Comerial</h3>
+            <input type="datetime-local" name="llamada_fecha" id="llamada_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="llamada_resumen" id="llamada_resumen" placeholder="Hablamos sobre el producto" required>
+            <button type="submit">Registrar Llamada</button>
+        </form>
+    </section>
+    <section>
+        <form id="entrevista-form" action="submit" class="email-form">
+            <h3>Entrevista de Adminisión</h3>
+            <input type="datetime-local" name="entrevista_fecha" id="entrevista_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="entrevista_resumen" id="entrevista_resumen" placeholder="Interesado y pasa a pago" required>
+            <button type="submit">Registrar Entrevista</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="alta-form" action="submit" class="email-form">
+            <h3>Alta en programa</h3>
+            <input type="datetime-local" name="alta_fecha" id="alta_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="alta_programa" id="alta_programa" placeholder="Especialización en Marketing Estratégico" required>
+            <button type="submit">Registrar Alta de Programa</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="pago-form" action="submit" class="email-form">
+            <h3>Pago</h3>
+            <input type="datetime-local" name="pago_fecha" id="pago_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="pago_monto" id="pago_monto" placeholder="1500" required>
+            <button type="submit">Registrar Pago</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="nps-form" action="submit" class="email-form">
+            <h3>NPS</h3>
+            <input type="datetime-local" name="nps_fecha" id="nps_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="nps-score" id="nps-score" placeholder="8" required>
+            <button type="submit">Registrar NPS</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="materia-form" action="submit" class="email-form">
+            <h3>Inicia Cursado de Materia</h3>
+            <input type="datetime-local" name="materia_fecha" id="materia_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="materia_aprobada_nombre" id="materia_aprobada_nombre" placeholder="Estadistica Avanzada para BigData" required>
+            <button type="submit">Registrar Inicio</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="materia-aprobada-form" action="submit" class="email-form">
+            <h3>Aprueba  Materia</h3>
+            <input type="datetime-local" name="materia_aprobada_fecha" id="materia_aprobada_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="materia_aprobada_nombre" id="materia_aprobada_nombre" placeholder="Estadistica Avanzada para BigData" required>
+            <input type="input" name="materia_aprobada_score" id="materia_aprobada_score" placeholder="10" required>
+            <button type="submit">Registrar Materia Aprobada</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="egreso-form" action="submit" class="email-form">
+            <h3>Egreso de Programa</h3>
+            <input type="datetime-local" name="egreso_fecha" id="egreso_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="egreso_nombre" id="egreso_nombre" placeholder="Especialización en Marketing Estratégico" required>
+            <button type="submit">Registrar Materia Aprobada</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="titulo-form" action="submit" class="email-form">
+            <h3>Entrega de Título</h3>
+            <input type="datetime-local" name="titulo_fecha" id="titulo_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="titulo_nombre" id="titulo_nombre" placeholder="Especialización en Marketing Estratégico" required>
+            <button type="submit">Registrar Entrega de Título</button>
+        </form>
+    </section>
+
+    <section>
+        <form id="referido-form" action="submit" class="email-form">
+            <h3>Entrega de Referido</h3>
+            <input type="datetime-local" name="referido_fecha" id="referido_fecha" placeholder="3/7/2023" required>
+            <input type="input" name="referido_nombre" id="referido_nombre" placeholder="Especialización en Marketing Estratégico" required>
+            <button type="submit">Registrar Entrega de Referido</button>
+        </form>
+    </section>
+<!-- END CONTENT -->
+    </div>
+    
     <script src="script.js"></script>
 
 </body>
