@@ -26,21 +26,31 @@
     </div>
     <h1>RudderStack ADEN Test</h1>
 
+    <div class ="content">
+<!-- CONTENT STARTS -->
+
     <section>
-        <!--("#email-form").addEventListener("submit", function(event){  -->
-        <form id="email-form" action="submit" class="email-form">
-            <h2>Login</h2>
-            <div class="email-field">
-                <img src="https://uploads-ssl.webflow.com/5f29812d706beb2bf6f62f64/5f29812d39ddb88db70ecc87_icon-mail.svg" alt="" class="icon-form-input-image">
-                <input type="email" name="email" id="email" placeholder="your@email.com" required>
-            </div>
-            <div class="submit-button">
-                <button type="submit">Identificar el email</button>
-            </div>
+        <form id="web-visit-form" action="submit" class="email-form">
+            <h3>Visita a WEB</h3>
+            
+            <!-- Referencia:       //  Referencia: https://www.rudderstack.com/docs/event-spec/standard-events/page/ -->
+            <input type="input" name="url" id="url" placeholder="www.google.com" required>
+            <button type="submit">Registrar Visita</button>
         </form>        
     </section>
 
-    
+    <section>
+        <form id="email-form" action="submit" class="email-form">
+            <h3>Login</h3>
+            <input type="email" name="email" id="email" placeholder="your@email.com" required>
+            <button type="submit">Identificar el email</button>
+        </form>        
+    </section>
+
+        
+
+<!-- END CONTENT -->
+    </div>
     <script src="script.js"></script>
 
 </body>
