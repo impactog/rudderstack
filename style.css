@@ -23,6 +23,7 @@ section {
     justify-content: center;
     min-width: 300px;
     margin: 14px;
+    float: left;
 }
 
 form {
