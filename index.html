@@ -61,7 +61,7 @@
     </section>
 
     <section>
-        <form id="intereses-form" action="submit" class="email-form">
+        <form id="productos" action="submit" class="email-form">
             <h3>Productos Consultados</h3>
             <input type="checkbox" name="productos" id="productos" value="Master en Marketing"> Master en Marketing
             <input type="checkbox" name="productos" id="productos" value="Especialización en Finanzas" > Especialización en Finanzas
@@ -89,6 +89,7 @@
     <section>
         <form id="evento-form" action="submit" class="email-form">
             <h3>Asistencia a evento</h3>
+            <input type="datetime-local" name="evento_fecha" id="evento_fecha" placeholder="3/7/2023" required>
             <input type="input" name="evento" id="evento" placeholder="Summit Compliance Ecuador" required>
             <input type="input" name="evento_pais" id="evento_pais" placeholder="Panamá" required>
               <input type="radio" id="Online" name="evento_tipo" value="Online">
